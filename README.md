@@ -1,4 +1,4 @@
-# 技能制作方法论
+# Skill-Craft
 
 从真实测试中迭代出健壮技能的方法论。不是写完就完，是"写-测-审-改-再测"的迭代循环。
 
@@ -19,7 +19,7 @@
 **方式 1：命令安装**
 
 ```bash
-npx skills add AdgaiWalker/Walkcraft-Skill-making-skill --skill skill-making-skill
+npx skills add AdgaiWalker/Walkcraft-Skill-Craft --skill skill-making-skill
 ```
 
 **方式 2：让 AI 帮你安装**
@@ -28,7 +28,7 @@ npx skills add AdgaiWalker/Walkcraft-Skill-making-skill --skill skill-making-ski
 
 ```text
 帮我安装这个 skill：
-https://github.com/AdgaiWalker/Walkcraft-Skill-making-skill
+https://github.com/AdgaiWalker/Walkcraft-Skill-Craft
 skill 名称：skill-making-skill
 请帮我用合适的方式完成安装。安装完成后，告诉我最短怎么调用它。
 ```
@@ -37,22 +37,32 @@ skill 名称：skill-making-skill
 
 ```
 Phase 1: 问题建模（10 分钟）
-  → 想清楚再动手，回答四个问题
+  → 想清楚再动手。类型判定 + 作用域边界 + 标准锚点搜索
 Phase 2: 草稿
   → 三阶段架构（发现 → 处理 → 执行）+ 去重 + 环境感知
 Phase 3: 真实测试
   → 最重要的一步。代码审查查逻辑，真实测试查现实
 Phase 4: 审计分级
   → P0/P1/P2，修根因不修症状
-Phase 5: 做减法
-  → 删掉 AI 想加但用户不需要的
+Phase 5: 做减法（三把刀）
+  → 离去（删）、转化（变）、迁移（移）
 Phase 6: 通用化
   → 技术术语换成日常语言
-Phase 7: 契约同步
-  → 配对技能一起改一起测
 ```
 
 **为什么这样设计**：第一版必然基于错误假设，只有真实测试才能暴露问题。这套方法论从一个真实案例中提炼——代码审查全部通过，但模拟测试才发现只扫到了一小半数据。
+
+## 经验库
+
+每次 f(X)→Y 的变换完成后，案例记入 `references/cases/`，决策规则记入 `references/patterns/`。规则指导下一次变换，案例验证规则是否站得住脚。具体→抽象→新的具体→更精确的抽象，每转一圈方法论本身变强。
+
+```
+references/
+├── cases/                          # 变换记录（输入→过程→输出→产出的规则）
+│   └── 001-astro-component-diagnosis.md
+└── patterns/                       # 决策规则（触发条件→核心动作→证据→例外）
+    └── framework-component-evaluation.md
+```
 
 ## 使用
 

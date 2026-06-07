@@ -27,6 +27,7 @@ description: >
 > 本技能无外部标准锚点。方法论基于实践经验积累，来源和证据见 [references/cases/](references/cases/)。每条决策规则见 [references/patterns/](references/patterns/)。
 
 **通用化**：用日常语言写，所有人都能用。用术语写，只有你能用。
+**SKILL是守门员不是知识库**：SKILL.md只放决策逻辑和路由，具体数据、模板、工具放references。主文件是底线守门员和资源管家，引导AI做决策、调用资源。
 
 **螺旋升级**：每次 f(X)→Y 的变换完成后，案例记入 `references/cases/`，提炼出的决策规则记入 `references/patterns/`。规则指导下一次变换，案例验证规则是否站得住脚。具体→抽象→新的具体→更精确的抽象，每转一圈 f 本身变强。
 
@@ -36,8 +37,11 @@ description: >
 - **模式**（`references/patterns/`）：从案例中提炼的决策规则，每条包含触发条件、核心动作、证据（引用案例）、例外。Phase 1 分类后先来这里匹配——规则覆盖已知风险，把注意力解放出来去发现未知风险。
 
 当前积累：
+
 - 案例 001：astro-component-diagnosis（React→Astro 组件诊断适配）
+- 案例 002：side-hustle-blueprint（副业蓝图技能的架构进化）
 - 模式 1：框架组件评估（当评估某个框架的组件质量时）
+- 模式 2：技能即守门员（当skill主文件膨胀或包含具体数据时）
 
 ---
 

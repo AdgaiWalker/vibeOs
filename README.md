@@ -59,9 +59,11 @@ Phase 6: 通用化
 ```
 references/
 ├── cases/                          # 变换记录（输入→过程→输出→产出的规则）
-│   └── 001-astro-component-diagnosis.md
+│   ├── 001-astro-component-diagnosis.md
+│   └── 002-side-hustle-blueprint.md
 └── patterns/                       # 决策规则（触发条件→核心动作→证据→例外）
-    └── framework-component-evaluation.md
+    ├── framework-component-evaluation.md
+    └── skill-as-gatekeeper.md
 ```
 
 ## 使用

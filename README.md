@@ -1,8 +1,11 @@
 # Skill-Craft
+将Claude code 家的skill creator生产的单人使用skill,锻造成通用skill.
+skill文件决策,附带一系列知识库、工具。甚至工作流本身。
 
 从真实测试中迭代出健壮技能的方法论。不是写完就完，是"写-测-审-改-再测"的迭代循环。
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+
 
 ## 对谁有用
 

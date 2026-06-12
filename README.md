@@ -1,5 +1,5 @@
 # Skill-Craft
-将Claude code 家的skill creator生产的单人使用skill,锻造成通用skill.
+对Claude code 家的skill creator生产的skill,锻造成所有人能用的通用skill.
 skill文件决策,附带一系列知识库、工具。甚至工作流本身。
 
 从真实测试中迭代出健壮技能的方法论。不是写完就完，是"写-测-审-改-再测"的迭代循环。

@@ -93,7 +93,7 @@ Agency-Craft 是一个母项目。它将逐步收纳一组同等级、以人为�
 | 技能 | 解决的问题 | 核心产物 | 状态 |
 | --- | --- | --- | --- |
 | [`Skill-Craft`](skills/skill-craft/) | 作者能用的技能，其他人难以理解、安装、迁移或稳定使用 | 可泛化、可测试、可进化的技能 | 已迁入本仓库 |
-| `orchestrate-skills` | 用户拥有多个技能，却不知道该用谁、何时使用、如何交接 | 对抗式裁决、最小可靠组合、关键路径和执行闸门 | 已有原型，待迁入 |
+| [`orchestrate-skills`](skills/orchestrate-skills/) | 用户拥有多个技能，却不知道该用谁、何时使用、如何交接 | 对抗式裁决、最小可靠组合、关键路径和执行闸门 | 已迁入本仓库 |
 | [`Vibe-Craft`](skills/vibe-craft/) | 人有愿望和感觉，却无法把模糊意图转成具体目标 | 当前状态、目标状态、变化维度、参照、约束和验收标准 | 第一版已创建，待真实任务验证 |
 
 三个技能分别工作在不同层：
@@ -165,7 +165,7 @@ Agency-Craft/
 - [x] 将第三个技能正式命名为 `Vibe-Craft`
 - [x] 创建 `Vibe-Craft` 第一版
 - [x] 将 `Skill-Craft` 与 `Vibe-Craft` 纳入统一技能目录
-- [ ] 将 `orchestrate-skills` 迁入 `skills/`
+- [x] 将 `orchestrate-skills` 迁入 `skills/`
 - [ ] 建立跨技能交接契约
 - [ ] 用真实用户任务验证 Vibe 2.0 交互闭环
 - [ ] 从案例中提炼可复用的人机交互模式

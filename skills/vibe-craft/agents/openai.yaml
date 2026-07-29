@@ -1,0 +1,4 @@
+interface:
+  display_name: "Vibe Craft"
+  short_description: "把模糊感觉转成可选择、可执行、可验收的具体意图规格"
+  default_prompt: "使用 $vibe-craft 帮我把这个模糊感觉澄清成可执行、可验收的具体意图规格。"

@@ -94,21 +94,21 @@ Agency-Craft 是一个母项目。它将逐步收纳一组同等级、以人为�
 | --- | --- | --- | --- |
 | [Skill-Craft](https://github.com/AdgaiWalker/Skill-Craft) | 作者能用的技能，其他人难以理解、安装、迁移或稳定使用 | 可泛化、可测试、可进化的技能 | 已有独立仓库，后续纳入本项目体系 |
 | `orchestrate-skills` | 用户拥有多个技能，却不知道该用谁、何时使用、如何交接 | 对抗式裁决、最小可靠组合、关键路径和执行闸门 | 已有原型，待迁入 |
-| `Intent-Craft` | 人有愿望和感觉，却无法把模糊意图转成具体目标 | 当前状态、目标状态、变化维度、参照、约束和验收标准 | **暂定名，尚未创建** |
+| [`Vibe-Craft`](skills/vibe-craft/) | 人有愿望和感觉，却无法把模糊意图转成具体目标 | 当前状态、目标状态、变化维度、参照、约束和验收标准 | 第一版已创建，待真实任务验证 |
 
 三个技能分别工作在不同层：
 
 ```text
-Intent-Craft       → 让人说清楚
+Vibe-Craft         → 让人说清楚
 orchestrate-skills → 让能力选明白、组织好
 Skill-Craft        → 让能力能被更多人稳定使用并持续进化
 ```
 
-当已有技能不足以实现清晰意图时，Skill-Craft 负责制造或改进能力；当能力足够多时，`orchestrate-skills` 负责裁决最小组合；当人还不知道自己真正想要什么时，`Intent-Craft` 负责建立意图。
+当已有技能不足以实现清晰意图时，Skill-Craft 负责制造或改进能力；当能力足够多时，`orchestrate-skills` 负责裁决最小组合；当人还不知道自己真正想要什么时，`Vibe-Craft` 负责建立意图。
 
-## Intent-Craft：规划中的意图锻造技能
+## Vibe-Craft：从感觉到具体意图
 
-`Intent-Craft` 是当前推荐名称，尚待最终确认，也尚未开始实现。
+`Vibe-Craft` 是把模糊感觉锻造成具体意图的技能。第一版已经创建，下一步将通过真实任务检验它能否减少追问、试错和 Token 浪费。
 
 它计划解决：
 
@@ -146,7 +146,7 @@ Agency-Craft/
 ├── skills/
 │   ├── skill-craft/
 │   ├── orchestrate-skills/
-│   └── intent-craft/
+│   └── vibe-craft/
 ├── references/
 │   ├── cases/
 │   └── patterns/
@@ -162,7 +162,8 @@ Agency-Craft/
 - [x] 将 `Walkcraft-Skill-Craft` 重命名为 `Skill-Craft`
 - [x] 建立 `orchestrate-skills` 原型
 - [x] 创建 `Agency-Craft` 母项目
-- [ ] 确认第三个技能是否使用 `Intent-Craft`
+- [x] 将第三个技能正式命名为 `Vibe-Craft`
+- [x] 创建 `Vibe-Craft` 第一版
 - [ ] 将现有技能按统一结构迁入 `skills/`
 - [ ] 建立跨技能交接契约
 - [ ] 用真实用户任务验证 Vibe 2.0 交互闭环

@@ -1,9 +1,9 @@
 ---
-name: orchestrate-skills
+name: vibe-flow
 description: "Adversarially adjudicate multiple Codex skills into the smallest reliable workflow, then coordinate execution with minimal user friction. Use Hua Luogeng-style network planning plus prosecution, defense, evidence, and verdicts to decide which skills are necessary, premature, duplicative, conditional, or rejected; identify the critical path, parallel lanes, handoff artifacts, gates, and immediate next action. Use when a user has collected or inherited skills but does not know which to use, how to combine them, what order to run them in, or wants Codex to choose and proceed without making the user manage the workflow."
 ---
 
-# Orchestrate Skills
+# Vibe Flow
 
 Act as an adversarial court for skills, then as the coordinator for the winning workflow. Do not make the user manage a bag of capabilities.
 

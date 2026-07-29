@@ -93,18 +93,18 @@ Agency-Craft 是一个母项目。它将逐步收纳一组同等级、以人为�
 | 技能 | 解决的问题 | 核心产物 | 状态 |
 | --- | --- | --- | --- |
 | [`Skill-Craft`](skills/skill-craft/) | 作者能用的技能，其他人难以理解、安装、迁移或稳定使用 | 可泛化、可测试、可进化的技能 | 已迁入本仓库 |
-| [`orchestrate-skills`](skills/orchestrate-skills/) | 用户拥有多个技能，却不知道该用谁、何时使用、如何交接 | 对抗式裁决、最小可靠组合、关键路径和执行闸门 | 已迁入本仓库 |
+| [`Vibe-Flow`](skills/vibe-flow/) | 用户拥有多个技能，却不知道该用谁、何时使用、如何交接 | 对抗式裁决、最小可靠组合、关键路径和执行闸门 | 已迁入本仓库 |
 | [`Vibe-Craft`](skills/vibe-craft/) | 人有愿望和感觉，却无法把模糊意图转成具体目标 | 当前状态、目标状态、变化维度、参照、约束和验收标准 | 第一版已创建，待真实任务验证 |
 
 三个技能分别工作在不同层：
 
 ```text
 Vibe-Craft         → 让人说清楚
-orchestrate-skills → 让能力选明白、组织好
+Vibe-Flow         → 让能力选明白、组织好
 Skill-Craft        → 让能力能被更多人稳定使用并持续进化
 ```
 
-当已有技能不足以实现清晰意图时，Skill-Craft 负责制造或改进能力；当能力足够多时，`orchestrate-skills` 负责裁决最小组合；当人还不知道自己真正想要什么时，`Vibe-Craft` 负责建立意图。
+当已有技能不足以实现清晰意图时，Skill-Craft 负责制造或改进能力；当能力足够多时，`Vibe-Flow` 负责裁决最小组合；当人还不知道自己真正想要什么时，`Vibe-Craft` 负责建立意图。
 
 ## Vibe-Craft：从感觉到具体意图
 
@@ -145,7 +145,7 @@ Skill-Craft        → 让能力能被更多人稳定使用并持续进化
 Agency-Craft/
 ├── skills/
 │   ├── skill-craft/
-│   ├── orchestrate-skills/
+│   ├── vibe-flow/
 │   └── vibe-craft/
 ├── references/
 │   ├── cases/
@@ -160,12 +160,12 @@ Agency-Craft/
 ## Roadmap
 
 - [x] 将 `Walkcraft-Skill-Craft` 重命名为 `Skill-Craft`
-- [x] 建立 `orchestrate-skills` 原型
+- [x] 建立 `Vibe-Flow` 原型
 - [x] 创建 `Agency-Craft` 母项目
 - [x] 将第三个技能正式命名为 `Vibe-Craft`
 - [x] 创建 `Vibe-Craft` 第一版
 - [x] 将 `Skill-Craft` 与 `Vibe-Craft` 纳入统一技能目录
-- [x] 将 `orchestrate-skills` 迁入 `skills/`
+- [x] 将 `Vibe-Flow` 迁入 `skills/`
 - [ ] 建立跨技能交接契约
 - [ ] 用真实用户任务验证 Vibe 2.0 交互闭环
 - [ ] 从案例中提炼可复用的人机交互模式

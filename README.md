@@ -1,5 +1,7 @@
 # Agency-Craft
 
+> **不是只有伟大的开创者，才能让人们看见新的可能。**
+
 [![Protocol](https://img.shields.io/badge/Agency_Protocol-v0.1-5B5BD6)](protocol/)
 [![Skills](https://img.shields.io/badge/reference_skills-3-111111)](skills/)
 [![Tests](https://img.shields.io/badge/tests-Node.js-339933)](tests/)

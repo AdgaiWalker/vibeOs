@@ -118,6 +118,18 @@ a {
   padding: 96px 0 104px;
 }
 
+.hero-thesis {
+  max-width: 680px;
+  margin: 0 0 42px;
+  padding-left: 16px;
+  border-left: 2px solid var(--violet);
+  color: #403a47;
+  font-size: clamp(15px, 1.25vw, 17px);
+  font-weight: 570;
+  letter-spacing: -0.02em;
+  line-height: 1.65;
+}
+
 .eyebrow {
   margin: 0 0 24px;
   color: var(--violet);
@@ -1167,6 +1179,11 @@ a {
   .hero {
     min-height: auto;
     padding: 74px 0 82px;
+  }
+
+  .hero-thesis {
+    margin-bottom: 36px;
+    font-size: 15px;
   }
 
   .hero h1 {

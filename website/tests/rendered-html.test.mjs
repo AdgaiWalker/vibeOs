@@ -35,6 +35,10 @@ test("server-renders the finished Agency-Craft homepage", async () => {
   assert.match(html, /<title>Agency-Craft · 把模糊变成具体<\/title>/i);
   assert.match(html, /让人说清楚/);
   assert.match(html, /让 AI 做得到/);
+  assert.match(
+    html,
+    /不是只有伟大的开创者，才能让人们看见新的可能。/,
+  );
   assert.match(html, /AGENCY CONTRACT/);
   assert.match(html, /Vibe-Craft/);
   assert.match(html, /Vibe-Flow/);
@@ -63,6 +67,10 @@ test("removes starter resources and preserves project-specific metadata", async 
   assert.match(page, /<footer className="site-footer">/);
   assert.match(page, /aria-labelledby=/);
   assert.doesNotMatch(page, /dangerouslySetInnerHTML/);
+  assert.ok(
+    page.indexOf("不是只有伟大的开创者") < page.indexOf("VIBE 2.0"),
+    "the new thesis must remain the first hero sentence",
+  );
 
   const hosting = JSON.parse(
     await readFile(new URL("../.openai/hosting.json", import.meta.url), "utf8"),

@@ -74,6 +74,9 @@ export default function Home() {
 
       <section className="hero section-shell" aria-labelledby="hero-title">
         <div className="hero-copy">
+          <p className="hero-thesis">
+            不是只有伟大的开创者，才能让人们看见新的可能。
+          </p>
           <p className="eyebrow">
             VIBE 2.0 <span>·</span> HUMAN–AI AGENCY PROTOCOL
           </p>

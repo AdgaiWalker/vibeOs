@@ -12,9 +12,17 @@ const repositoryRoot = path.resolve(
 async function findMarkdownFiles(directory) {
   const entries = await readdir(directory, { withFileTypes: true });
   const files = [];
+  const ignoredDirectories = new Set([
+    ".git",
+    ".next",
+    ".vinext",
+    ".wrangler",
+    "dist",
+    "node_modules",
+  ]);
 
   for (const entry of entries) {
-    if (entry.name === ".git") {
+    if (entry.isDirectory() && ignoredDirectories.has(entry.name)) {
       continue;
     }
 

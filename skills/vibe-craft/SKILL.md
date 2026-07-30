@@ -15,6 +15,22 @@ Optimize for:
 
 Own discovery and intent specification. Do not silently become the domain implementer. When the user also authorizes execution, hand the completed specification directly to the appropriate skill, tool, or agent without making the user copy another prompt.
 
+## Agency Contract handoff
+
+At every cross-role handoff, carry one compact Agency Contract envelope:
+
+- `objective` — one terminal result and status;
+- `state` — distinguishable current and target states;
+- `decisions` — Locked, Provisional and Open choices with owners and evidence;
+- `boundaries` — must preserve, must avoid and out of scope;
+- `acceptance_criteria` — observable checks defined before execution;
+- `handoff` — next owner, required inputs, continuation gate and bounded reopen conditions;
+- `evidence` — references supporting the interpretation and later validation.
+
+Keep the envelope inside the intent specification unless a machine-readable contract is useful to the next owner. Mark the objective `forming` while a high-impact decision remains Open and `ready` only when the Completion gate passes. Do not create a second conversational summary beside the contract.
+
+For a structured or machine-readable envelope, use the exact v0.1 keys: `contract_version: "0.1"`; `objective.{terminal_result,status}`; `state.{current,target}`; `decisions.{locked,provisional,open}`; `boundaries.{must_preserve,must_avoid,out_of_scope}`; `acceptance_criteria`; `handoff.{next_owner,inputs,continuation_gate,reopen_if}`; and `evidence`. Decision items are `{id,statement,owner,evidence}` with owner `human`, `ai`, `shared`, or `system`. Acceptance items are `{id,check,method,status,evidence}` with status `pending`, `pass`, `fail`, or `unavailable`. Evidence items are `{type,source,supports}`. Do not replace keys or enum values with near-synonyms. In prose, the same semantics may be integrated into natural headings, but none may disappear. A user statement, observed artifact, comparison reference, or labeled inference is valid evidence; record its source instead of omitting `evidence`.
+
 ## Hard rules
 
 1. Observe the current artifact, context, or state before asking the user to describe what is already visible.

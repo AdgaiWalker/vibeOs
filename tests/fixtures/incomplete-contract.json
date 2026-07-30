@@ -1,0 +1,10 @@
+{
+  "contract_version": "0.1",
+  "objective": {
+    "terminal_result": "This JSON is syntactically valid but not a usable handoff."
+  },
+  "state": {
+    "current": "Unknown",
+    "target": "Unknown"
+  }
+}

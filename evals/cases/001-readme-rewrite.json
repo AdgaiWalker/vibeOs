@@ -1,0 +1,82 @@
+{
+  "case_id": "AC-001",
+  "case_type": "real-repository-task",
+  "recording_mode": "retrospective",
+  "source_request": "Reference hylarucoder/hai-stack's README structure, adversarially adjudicate Agency-Craft from first principles, and rewrite its README.",
+  "baseline": {
+    "commit": "fe95bd5",
+    "workflow": "Existing README artifact only; no comparable execution baseline was collected."
+  },
+  "result": {
+    "commit": "3c4f208",
+    "artifact": "README.md",
+    "claim_boundary": "Proves retrospective traceability, selective gate use and repository validation; does not prove prospective protocol usability or effectiveness."
+  },
+  "rulings": [
+    {
+      "skill": "vibe-flow",
+      "ruling": "required"
+    },
+    {
+      "skill": "hai-rewrite-doc",
+      "ruling": "required"
+    },
+    {
+      "skill": "readme-beautifier",
+      "ruling": "reject"
+    },
+    {
+      "skill": "hai-audit-docs-internally",
+      "ruling": "reject"
+    },
+    {
+      "skill": "vibe-craft",
+      "ruling": "reject"
+    }
+  ],
+  "signals": [
+    {
+      "name": "blocking_clarification_turns",
+      "value": 0,
+      "evidence_level": "observed",
+      "source": "Task interaction trace"
+    },
+    {
+      "name": "readme_relative_links",
+      "value": "pass",
+      "evidence_level": "measured",
+      "source": "Automated relative-link check before commit 3c4f208"
+    },
+    {
+      "name": "skill_structure_validation",
+      "value": "pass",
+      "evidence_level": "measured",
+      "source": "Codex quick_validate.py output for all three skill folders"
+    },
+    {
+      "name": "high_impact_executor_guesses",
+      "value": null,
+      "evidence_level": "unavailable",
+      "reason": "No independent decision annotation was performed before execution."
+    },
+    {
+      "name": "first_execution_acceptance_rate",
+      "value": null,
+      "evidence_level": "unavailable",
+      "reason": "No formal human acceptance score was collected."
+    },
+    {
+      "name": "decisions_reopened_after_execution",
+      "value": null,
+      "evidence_level": "unavailable",
+      "reason": "The task did not define a comparable post-execution observation window."
+    },
+    {
+      "name": "total_token_use",
+      "value": null,
+      "evidence_level": "unavailable",
+      "reason": "No comparable baseline Token count was captured."
+    }
+  ],
+  "falsifier": "A comparable baseline that reaches equal or better acceptance with fewer decisions, turns and Tokens would falsify an effectiveness claim for this workflow."
+}

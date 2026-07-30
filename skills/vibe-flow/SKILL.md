@@ -17,6 +17,22 @@ Use the fewest skills that can reliably achieve the terminal result. Treat every
 
 Apply Hua Luogeng-style coordination after adjudication: decompose observable tasks, connect only real dependencies, identify the critical path, parallelize independent work, and place gates immediately after the work they protect.
 
+## Agency Contract handoff
+
+Consume an existing Agency Contract when one is available; extend it instead of reconstructing intent from conversation. At every cross-role handoff, carry:
+
+- `objective` — the terminal result fixed before adjudication;
+- `state` — current evidence and the target state;
+- `decisions` — Locked, Provisional and Open judgments with owners and evidence;
+- `boundaries` — preserved commitments, rejected outcomes and scope exclusions;
+- `acceptance_criteria` — observable workflow and terminal gates;
+- `handoff` — next owner, exact inputs, continuation gate and bounded reopen conditions;
+- `evidence` — skill instructions, project facts and execution results supporting the ruling.
+
+Keep one envelope as the source of truth. Put skill rulings, critical path and parallel lanes inside the handoff rather than creating disconnected plans. Mark the objective `blocked` when authority or gate evidence is missing, and reopen adjudication only when named evidence changes.
+
+For a structured or machine-readable envelope, use the exact v0.1 keys: `contract_version: "0.1"`; `objective.{terminal_result,status}`; `state.{current,target}`; `decisions.{locked,provisional,open}`; `boundaries.{must_preserve,must_avoid,out_of_scope}`; `acceptance_criteria`; `handoff.{next_owner,inputs,continuation_gate,reopen_if}`; and `evidence`. Decision items are `{id,statement,owner,evidence}` with owner `human`, `ai`, `shared`, or `system`. Acceptance items are `{id,check,method,status,evidence}` with status `pending`, `pass`, `fail`, or `unavailable`. Evidence items are `{type,source,supports}`. Do not replace keys or enum values with near-synonyms. In prose, the same semantics may be integrated into the ruling and workflow, but none may disappear. Skill instructions, project facts, user constraints, and labeled assumptions count as evidence when their source is named.
+
 ## Hard rules
 
 1. Read every shortlisted skill's `SKILL.md` completely before admitting it, assigning it a role, or invoking it. Read directly required references when needed for the proposed task.

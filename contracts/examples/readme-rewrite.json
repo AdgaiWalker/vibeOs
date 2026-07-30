@@ -1,0 +1,83 @@
+{
+  "contract_version": "0.1",
+  "objective": {
+    "terminal_result": "A first-time visitor can understand, install and try Agency-Craft from the root README.",
+    "status": "achieved"
+  },
+  "state": {
+    "current": "The README is vision-heavy, gives Vibe-Craft disproportionate space and documents a root references directory that does not exist.",
+    "target": "The README leads from value and method to verified skill roles, installation, usage and honest project status."
+  },
+  "decisions": {
+    "locked": [
+      {
+        "id": "D1",
+        "statement": "Use hai-stack for information-architecture reference without copying its project claims.",
+        "owner": "human",
+        "evidence": "User request"
+      },
+      {
+        "id": "D2",
+        "statement": "Use the smallest skill workflow that can adversarially adjudicate and rewrite the document.",
+        "owner": "ai",
+        "evidence": "Vibe-Flow ruling"
+      }
+    ],
+    "provisional": [],
+    "open": []
+  },
+  "boundaries": {
+    "must_preserve": [
+      "Agency-Craft project name",
+      "Vibe 2.0 positioning",
+      "Human ownership of value decisions and acceptance"
+    ],
+    "must_avoid": [
+      "Unsupported effectiveness claims",
+      "Copying hai-stack project-specific content",
+      "Documenting files that do not exist"
+    ],
+    "out_of_scope": [
+      "Changing skill behavior",
+      "Building a website"
+    ]
+  },
+  "acceptance_criteria": [
+    {
+      "id": "A1",
+      "check": "README relative links resolve to repository paths.",
+      "method": "Automated link check",
+      "status": "pass",
+      "evidence": "Commit 3c4f208"
+    },
+    {
+      "id": "A2",
+      "check": "All three documented skill roles match their SKILL.md contracts.",
+      "method": "Manual source verification plus skill validation",
+      "status": "pass",
+      "evidence": "Commit 3c4f208"
+    }
+  ],
+  "handoff": {
+    "next_owner": "project-author",
+    "inputs": [
+      "README.md at commit 3c4f208",
+      "Three SKILL.md source files"
+    ],
+    "continuation_gate": "Real-user evidence is required before claiming reduced Token use or rework.",
+    "reopen_if": [
+      "A documented command fails from a clean clone",
+      "A skill contract contradicts the README"
+    ]
+  },
+  "evidence": [
+    {
+      "type": "commit",
+      "source": "3c4f208",
+      "supports": [
+        "A1",
+        "A2"
+      ]
+    }
+  ]
+}

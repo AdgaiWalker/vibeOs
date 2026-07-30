@@ -1,5 +1,5 @@
 ---
-name: skill-making-skill
+name: skill-craft
 description: >
   创建健壮技能的方法论。当用户要求创建新技能、改进现有技能、或调试技能质量问题时触发。
   也适用于用户提到"怎么写好一个 skill"、"技能质量"、"SKILL.md 结构"、"测试技能"、
@@ -30,6 +30,22 @@ description: >
 **SKILL是守门员不是知识库**：SKILL.md只放决策逻辑和路由，具体数据、模板、工具放references。主文件是底线守门员和资源管家，引导AI做决策、调用资源。
 
 **螺旋升级**：每次 f(X)→Y 的变换完成后，案例记入 `references/cases/`，提炼出的决策规则记入 `references/patterns/`。规则指导下一次变换，案例验证规则是否站得住脚。具体→抽象→新的具体→更精确的抽象，每转一圈 f 本身变强。
+
+## Agency Contract handoff
+
+开始时消费已有的 Agency Contract，不让用户重新解释已经锁定的目标。跨角色交接时携带一个紧凑 envelope：
+
+- `objective`：技能必须实现的终点行为及当前状态；
+- `state`：现有技能或方法与经过验证的目标状态；
+- `decisions`：Locked、Provisional、Open 的设计判断、所有者和依据；
+- `boundaries`：必须保留、必须避免和本轮不处理的范围；
+- `acceptance_criteria`：真实测试开始前定义的可观察通过条件；
+- `handoff`：下一负责人、输入、继续闸门和失败后重开的有限范围；
+- `evidence`：RED/GREEN 输出、独立测试发现、代码位置、案例或模式。
+
+除非消费者需要机器读取，否则将 envelope 融入现有问题模型和测试报告，不额外制造第二份总结。高影响判断仍为 Open 时把目标标为 `forming`；P0/P1 清除且证据达标后才标为 `ready` 或 `achieved`。
+
+生成结构化或机器可读的 envelope 时，必须使用精确的 v0.1 键名：`contract_version: "0.1"`；`objective.{terminal_result,status}`；`state.{current,target}`；`decisions.{locked,provisional,open}`；`boundaries.{must_preserve,must_avoid,out_of_scope}`；`acceptance_criteria`；`handoff.{next_owner,inputs,continuation_gate,reopen_if}`；以及 `evidence`。Decision 项使用 `{id,statement,owner,evidence}`，owner 只能是 `human`、`ai`、`shared`、`system`；Acceptance 项使用 `{id,check,method,status,evidence}`，status 只能是 `pending`、`pass`、`fail`、`unavailable`；Evidence 项使用 `{type,source,supports}`。不得用近义键名或角色名替换枚举值。采用自然语言报告时可以把相同语义融入现有章节，但不能丢失任何一项；尚无 RED/GREEN 或独立测试证据时，应明确记录缺失证据，不能省略。
 
 ### 经验库
 

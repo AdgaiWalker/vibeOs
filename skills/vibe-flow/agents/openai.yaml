@@ -1,4 +1,4 @@
 interface:
   display_name: "Vibe Flow"
-  short_description: "对候选技能进行对抗式审理，裁决关键路径并直接执行最小可靠组合"
-  default_prompt: "使用 $vibe-flow 对这些技能进行对抗式审理，选出最小组合并直接推进我的目标。"
+  short_description: "裁决最小技能组合，用多范畴第一性与华罗庚统筹从调查推进到复盘"
+  default_prompt: "使用 $vibe-flow，根据上下文判断是否需要多范畴第一性推演，裁决最小技能组合；复杂任务用华罗庚统筹完整周期，从调查、排网和执行控制推进到验收复盘。"

@@ -56,8 +56,12 @@ description: >
 
 - 案例 001：astro-component-diagnosis（React→Astro 组件诊断适配）
 - 案例 002：side-hustle-blueprint（副业蓝图技能的架构进化）
+- 案例 003：vibe-flow-category-coordination（范畴第一性与华罗庚统筹改造）
+- 案例 004：hua-coordination-full-cycle（从任务调查到资源受限排程与复盘定额）
 - 模式 1：框架组件评估（当评估某个框架的组件质量时）
 - 模式 2：技能即守门员（当skill主文件膨胀或包含具体数据时）
+- 模式 3：条件化推理模块（新方法与既有技能重叠、且只在特定不确定性下有用时）
+- 模式 4：治理型技能的操作闭环（复杂任务需要可检查的调查、基线、偏差和学习产物时）
 
 ---
 

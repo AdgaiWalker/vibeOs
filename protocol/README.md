@@ -30,6 +30,18 @@ Every material choice has exactly one state:
 
 Execution may begin when no high-impact decision is Open. Low-impact reversible choices may remain Provisional.
 
+## Category-conditioned first-principles reasoning
+
+This is an optional reasoning mechanism, not a fourth gate. Use it inside Ground or Route only when unresolved facts, causal models or predictions could materially change capability selection or the execution network.
+
+- Human-owned value, taste, identity, priority and risk-acceptance decisions stay Open for the person or the Intent gate.
+- AI- or system-owned factual uncertainty may be examined through two to four context-derived categories with distinct first principles, evidence and falsifiers.
+- Categories investigate the same object independently; they do not vote and are not forced to agree.
+- Robust intersections become evidence. Action-changing disagreements become observable evidence tasks with named consumers and continuation gates.
+- Experts are not execution-network nodes. Their evidence tasks enter Vibe-Flow, which identifies one or more current main-contradiction paths, float, resource constraints and re-planning triggers.
+
+Keep category analyses inside the existing Agency Contract: conclusions in `decisions`, sources in `evidence`, decisive tests in `handoff.inputs` and falsifiers in `handoff.reopen_if`. Do not add contract fields until real forward-use evidence shows v0.1 cannot carry the handoff.
+
 ## The interaction loop
 
 ```text
@@ -42,7 +54,7 @@ Ground → Contrast → Decide → Specify → Route → Execute → Validate �
 | **Contrast** | Two to four materially different directions reveal important dimensions and tradeoffs | The human can recognize meaningful differences |
 | **Decide** | Choices are Locked, Provisional or Open; preservation and rejection boundaries are recorded | No high-impact value choice remains Open |
 | **Specify** | The minimum Agency Contract is complete | A competent executor can proceed without inventing a value judgment |
-| **Route** | Every admitted capability has unique value, a valid input and a named consumer | The critical path and continuation gates are observable |
+| **Route** | Every admitted capability has unique value, a valid input and a named consumer | One or more current main-contradiction paths and continuation gates are observable |
 | **Execute** | The selected domain capability changes only the authorized scope | Evidence exists for each acceptance check |
 | **Validate** | Evidence is compared with acceptance criteria | Checks pass, or only failed dimensions are reopened |
 | **Learn** | A useful failure, case or repeated rule is recorded | The next run can start with less recovery and fewer assumptions |
@@ -57,7 +69,7 @@ Use when the executor would otherwise need to guess what subjective language mea
 
 ### Flow gate — Vibe-Flow
 
-Use when several capabilities could participate. The gate passes when every admitted capability survives an adversarial necessity test, real dependencies form one critical path, and every handoff has a consumer and evidence gate.
+Use when several capabilities could participate. The gate passes when every admitted capability survives an adversarial necessity test, real dependencies reveal one or more current main-contradiction paths, and every handoff has a consumer and evidence gate.
 
 ### Capability gate — Skill-Craft
 

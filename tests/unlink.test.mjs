@@ -17,10 +17,10 @@ const repositoryRoot = path.resolve(
   path.dirname(fileURLToPath(import.meta.url)),
   "..",
 );
-const skillNames = ["skill-craft", "vibe-craft", "vibe-flow"];
+const skillNames = ["vibe-recipe", "vibe-check", "vibe-flow"];
 
 test("make unlink removes only links owned by this repository", async () => {
-  const codexHome = await mkdtemp(path.join(os.tmpdir(), "agency-codex-home-"));
+  const codexHome = await mkdtemp(path.join(os.tmpdir(), "vibeoos-codex-home-"));
   const environment = { ...process.env, CODEX_HOME: codexHome };
   const linkResult = spawnSync("make", ["link"], {
     cwd: repositoryRoot,
@@ -55,7 +55,7 @@ test("make unlink removes only links owned by this repository", async () => {
 });
 
 test("make unlink leaves a same-name path it does not own", async () => {
-  const codexHome = await mkdtemp(path.join(os.tmpdir(), "agency-codex-home-"));
+  const codexHome = await mkdtemp(path.join(os.tmpdir(), "vibeoos-codex-home-"));
   const environment = { ...process.env, CODEX_HOME: codexHome };
   const linkResult = spawnSync("make", ["link"], {
     cwd: repositoryRoot,
@@ -64,7 +64,7 @@ test("make unlink leaves a same-name path it does not own", async () => {
   });
   assert.equal(linkResult.status, 0);
 
-  const conflictRoot = path.join(codexHome, "skills", "vibe-craft");
+  const conflictRoot = path.join(codexHome, "skills", "vibe-check");
   const marker = path.join(conflictRoot, "owner.txt");
   await unlink(conflictRoot);
   await mkdir(conflictRoot);
@@ -77,6 +77,6 @@ test("make unlink leaves a same-name path it does not own", async () => {
   });
 
   assert.notEqual(unlinkResult.status, 0);
-  assert.match(unlinkResult.stderr, /vibe-craft: not owned/);
+  assert.match(unlinkResult.stderr, /vibe-check: not owned/);
   await access(marker);
 });

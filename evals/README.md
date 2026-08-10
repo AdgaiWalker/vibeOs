@@ -1,4 +1,4 @@
-# Agency-Craft Evaluations
+# vibeoOs Evaluations
 
 Evaluations test whether Agency Protocol reduces guessing and rework while preserving human decision ownership.
 

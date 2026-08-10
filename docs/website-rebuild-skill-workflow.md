@@ -1,13 +1,13 @@
-# Agency-Craft 官网重做 Skill Workflow
+# vibeoOs 官网重做 Skill Workflow
 
 这份工作流不是技能清单，而是一条从模糊意图到可验收官网的最短可靠路径。`vibe-flow` 负责统筹和裁决，用户只需要判断关键方向，不需要亲自调度技能。
 
 ## 终点
 
-从零交付一个 Agency-Craft 官网：
+从零交付一个 vibeoOs 官网：
 
 - 首屏准确表达“不是只有伟大的开创者，才能让人们看见新的可能”；
-- 内容、视觉和交互共同解释 Agency-Craft 如何把模糊意图变成可执行契约；
+- 内容、视觉和交互共同解释 vibeoOs 如何把模糊意图变成可执行契约；
 - 桌面、平板、手机均可用，无横向溢出，键盘和触控路径成立；
 - 构建通过，动效通过严格审查，并尊重减少动态效果设置；
 - 默认交付本地地址；只有用户明确授权后才发布到生产环境。
@@ -17,7 +17,7 @@
 | 顺序 | 技能 | 裁决 | 唯一职责 | 交接证据 |
 | --- | --- | --- | --- | --- |
 | 0 | `vibe-flow` | 必需 | 对抗式裁决技能、安排关键路径、守住闸门 | 一份可执行流程与最终验收结论 |
-| 1 | `vibe-craft` | 必需 | 引导用户把受众、价值、感受与边界说具体 | 无高影响开放项的 Intent Spec / Agency Contract |
+| 1 | `vibe-check` | 必需 | 引导用户把受众、价值、感受与边界说具体 | 无高影响开放项的 Intent Spec / Agency Contract |
 | 2 | `emil-design-eng` | 必需 | 将已确认意图转成信息层级、视觉语言与交互原则 | 可供执行者直接实现的设计工程简报 |
 | 3 | `sites-building` | 必需 | 实现网站、维护源码与运行配置 | 可运行源码与通过的生产构建 |
 | 3A | `imagegen` | 必需但延后 | 在文案与视觉方向稳定后，只生成一张原创社交预览图 | 已校验并保存的 `public/og.png` |
@@ -39,7 +39,7 @@
 
 ```text
 vibe-flow 裁决
-  → vibe-craft 意图契约
+  → vibe-check 意图契约
   → 意图闸门
   → emil-design-eng 设计工程简报
   → 设计闸门
@@ -75,4 +75,4 @@ vibe-flow 裁决
 
 直接说：
 
-> 用 `$vibe-flow` 按 `docs/website-rebuild-skill-workflow.md` 从零重做 Agency-Craft 官网。最终交付通过构建、动效审查和浏览器响应式测试的本地版本；未经我明确授权，不发布到生产环境。
+> 用 `$vibe-flow` 按 `docs/website-rebuild-skill-workflow.md` 从零重做 vibeoOs 官网。最终交付通过构建、动效审查和浏览器响应式测试的本地版本；未经我明确授权，不发布到生产环境。

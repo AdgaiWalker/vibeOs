@@ -64,7 +64,7 @@ description: "根据上下文对多个 Codex 技能进行对抗式裁决，选�
 
 检查 Agency Contract 中的 Open 判断：
 
-- 人拥有的高影响 Open：进入意图闸门，例如 Vibe-Craft；不能由专家团替人决定。
+- 人拥有的高影响 Open：进入意图闸门，例如 Vibe-Check；不能由专家团替人决定。
 - `ai` 或 `system` 拥有的事实、因果或预测 Open：可以进入多范畴第一性推演。
 - 权限 Open：停止在授权边界，不能用推论绕过。
 

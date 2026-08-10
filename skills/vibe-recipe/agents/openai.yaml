@@ -1,0 +1,4 @@
+interface:
+  display_name: "Vibe Recipe"
+  short_description: "变套路：把一次成功炼成换个参数就能复用的 AI 菜谱"
+  default_prompt: "使用 $vibe-recipe，把这次做成的方法提炼成可复用的 AI 菜谱，并用真实任务验证别人也能用。"

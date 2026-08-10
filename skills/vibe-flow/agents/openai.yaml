@@ -1,4 +1,4 @@
 interface:
   display_name: "Vibe Flow"
-  short_description: "裁决最小技能组合，用多范畴第一性与华罗庚统筹从调查推进到复盘"
-  default_prompt: "使用 $vibe-flow，根据上下文判断是否需要多范畴第一性推演，裁决最小技能组合；复杂任务用华罗庚统筹完整周期，从调查、排网和执行控制推进到验收复盘。"
+  short_description: "串起来：自动选择合适工具、安排顺序并推进到可检查的结果"
+  default_prompt: "使用 $vibe-flow，自己选择完成目标真正需要的工具、安排先后与可同时推进的工作，并做到可以检查的结果。"

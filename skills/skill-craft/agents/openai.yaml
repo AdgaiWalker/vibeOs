@@ -1,4 +1,0 @@
-interface:
-  display_name: "Skill Craft"
-  short_description: "通过真实测试、分级审计和经验回流创建或改进可靠技能"
-  default_prompt: "使用 $skill-craft 把这套方法创建或改进成经过真实测试、可以继续迭代的可靠技能。"

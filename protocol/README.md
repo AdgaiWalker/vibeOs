@@ -61,9 +61,9 @@ Ground → Contrast → Decide → Specify → Route → Execute → Validate �
 
 The loop is not a mandatory pipeline. Enter at the earliest unresolved state and skip gates that already pass.
 
-## Three reference gates
+## Vibe Tri-Pack: three reference gates
 
-### Intent gate — Vibe-Craft
+### Check gate — Vibe-Check
 
 Use when the executor would otherwise need to guess what subjective language means. The gate passes when present and target states are distinguishable, important dimensions have anchors, boundaries are explicit and acceptance can be observed.
 
@@ -71,9 +71,9 @@ Use when the executor would otherwise need to guess what subjective language mea
 
 Use when several capabilities could participate. The gate passes when every admitted capability survives an adversarial necessity test, real dependencies reveal one or more current main-contradiction paths, and every handoff has a consumer and evidence gate.
 
-### Capability gate — Skill-Craft
+### Recipe gate — Vibe-Recipe
 
-Use when a method should become a reusable skill or an existing skill is unreliable. The gate passes when realistic independent testing has challenged its assumptions, P0/P1 failures are cleared, and cases or patterns preserve what was learned.
+Use when a successful method should become a reusable recipe or an existing recipe is unreliable. The gate passes when realistic independent testing has challenged its assumptions, P0/P1 failures are cleared, and cases or patterns preserve what was learned.
 
 ## Friction rules
 

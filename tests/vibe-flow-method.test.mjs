@@ -90,8 +90,8 @@ test("Vibe-Flow routes complex work through an inspectable end-to-end coordinati
     "后推",
     "总时差",
     "触发重新统筹",
-    "Vibe-Craft",
-    "Skill-Craft",
+    "Vibe-Check",
+    "Vibe-Recipe",
   ]) {
     assert.equal(
       referenceSource.includes(expected),
@@ -160,11 +160,11 @@ test("Vibe-Flow remains a compact gatekeeper", async () => {
   );
 });
 
-test("Skill-Craft records the independent Vibe-Flow transformation evidence", async () => {
+test("Vibe-Recipe records the independent Vibe-Flow transformation evidence", async () => {
   const casePath = path.join(
     repositoryRoot,
     "skills",
-    "skill-craft",
+    "vibe-recipe",
     "references",
     "cases",
     "003-vibe-flow-category-coordination.md",
@@ -172,7 +172,7 @@ test("Skill-Craft records the independent Vibe-Flow transformation evidence", as
   const patternPath = path.join(
     repositoryRoot,
     "skills",
-    "skill-craft",
+    "vibe-recipe",
     "references",
     "patterns",
     "conditional-reasoning-module.md",
@@ -201,11 +201,11 @@ test("Skill-Craft records the independent Vibe-Flow transformation evidence", as
   assert.match(patternSource, /不是第四个技能/);
 });
 
-test("Skill-Craft records the full-cycle operationalization evidence", async () => {
+test("Vibe-Recipe records the full-cycle operationalization evidence", async () => {
   const casePath = path.join(
     repositoryRoot,
     "skills",
-    "skill-craft",
+    "vibe-recipe",
     "references",
     "cases",
     "004-hua-coordination-full-cycle.md",
@@ -213,7 +213,7 @@ test("Skill-Craft records the full-cycle operationalization evidence", async () 
   const patternPath = path.join(
     repositoryRoot,
     "skills",
-    "skill-craft",
+    "vibe-recipe",
     "references",
     "patterns",
     "governance-skill-operational-cycle.md",

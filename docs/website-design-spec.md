@@ -1,4 +1,4 @@
-# Agency-Craft Website Design Specification
+# vibeoOs Website Design Specification
 
 ## Locked direction
 
@@ -10,21 +10,21 @@ The human-selected concept is [`design/concepts/01-hero-material-choreography.pn
 
 Above the fold:
 
-- `AGENCY—CRAFT`
+- `vibeoOs`
 - `不是只有伟大的开创者，才能让人们看见新的可能。`
 
 Downstream copy:
 
-1. `为什么需要 Agency-Craft`
+1. `为什么需要 vibeoOs`
 2. `AI 的执行能力越来越强，但执行速度不能补偿方向错误。`
 3. `更可爱` / `更高级` / `更自然`
 4. `把模糊变成具体。`
 5. `AI 引导意图，人做决策，AI 执行。`
 6. `观察现状` → `建立对照` → `人做决定` → `写成规格` → `裁决能力` → `AI 执行` → `按证据验收` → `沉淀经验`
 7. `三道独立闸门`
-8. `INTENT` / `Vibe-Craft` / `把感觉变成决定`
+8. `INTENT` / `Vibe-Check` / `把感觉变成决定`
 9. `FLOW` / `Vibe-Flow` / `让能力选明白、组织好`
-10. `CAPABILITY` / `Skill-Craft` / `把一次方法变成可靠技能`
+10. `CAPABILITY` / `Vibe-Recipe` / `把一次方法变成可靠技能`
 11. `AGENCY CONTRACT` / `共同交接语言`
 12. `它是交接物，不是让用户填写的表格。`
 13. `objective` / `decisions` / `boundaries` / `acceptance_criteria` / `handoff` / `evidence`

@@ -10,10 +10,10 @@ const repositoryRoot = path.resolve(
   path.dirname(fileURLToPath(import.meta.url)),
   "..",
 );
-const skillNames = ["skill-craft", "vibe-craft", "vibe-flow"];
+const skillNames = ["vibe-recipe", "vibe-check", "vibe-flow"];
 
 test("make status reports repository links without changing them", async () => {
-  const codexHome = await mkdtemp(path.join(os.tmpdir(), "agency-codex-home-"));
+  const codexHome = await mkdtemp(path.join(os.tmpdir(), "vibeoos-codex-home-"));
   const environment = { ...process.env, CODEX_HOME: codexHome };
   const linkResult = spawnSync("make", ["link"], {
     cwd: repositoryRoot,

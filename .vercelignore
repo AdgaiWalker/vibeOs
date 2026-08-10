@@ -1,0 +1,14 @@
+.git/
+node_modules/
+dist/
+design/
+docs/
+contracts/
+protocol/
+cases/
+skills/
+scripts/
+tests/
+Makefile
+README.md
+LICENSE

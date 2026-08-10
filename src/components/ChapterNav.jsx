@@ -1,30 +1,30 @@
-export function ChapterNav({ chapters, activeChapter }) {
-  const handleJump = (id) => {
-    document.getElementById(id)?.scrollIntoView({
-      behavior: window.matchMedia("(prefers-reduced-motion: reduce)").matches
-        ? "auto"
-        : "smooth",
-      block: "start",
-    });
-  };
-
+export function ChapterNav({ scenes, current, busy, onSelect }) {
   return (
-    <nav className="chapter-nav" aria-label="页面章节">
-      <span className="chapter-nav__track" aria-hidden="true" />
-      {chapters.map((chapter, index) => (
-        <button
-          key={chapter.id}
-          className={`chapter-nav__item ${
-            activeChapter === chapter.id ? "is-active" : ""
-          }`}
-          type="button"
-          onClick={() => handleJump(chapter.id)}
-          aria-label={`前往${chapter.label}`}
-          aria-current={activeChapter === chapter.id ? "step" : undefined}
-        >
-          <span aria-hidden="true">{String(index + 1).padStart(2, "0")}</span>
-        </button>
-      ))}
+    <nav className="chapter-nav" aria-label="六幕导航">
+      {scenes.map((scene) => {
+        const active = current === scene.index;
+        return (
+          <button
+            key={scene.id}
+            className={`chapter-nav__item ${active ? "is-active" : ""}`}
+            type="button"
+            onClick={(event) =>
+              onSelect(
+                scene.index,
+                event.detail === 0 ? "keyboard" : "rail",
+              )
+            }
+            aria-label={`第 ${scene.index + 1} 幕：${scene.label}`}
+            aria-current={active ? "step" : undefined}
+            data-pending={busy && !active ? "true" : undefined}
+          >
+            <span className="chapter-nav__number" aria-hidden="true">
+              {String(scene.index + 1).padStart(2, "0")}
+            </span>
+            <span className="chapter-nav__line" aria-hidden="true" />
+          </button>
+        );
+      })}
     </nav>
   );
 }

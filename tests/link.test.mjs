@@ -17,10 +17,10 @@ const repositoryRoot = path.resolve(
   path.dirname(fileURLToPath(import.meta.url)),
   "..",
 );
-const skillNames = ["skill-craft", "vibe-craft", "vibe-flow"];
+const skillNames = ["vibe-recipe", "vibe-check", "vibe-flow"];
 
 test("make link installs all reference skills into an isolated Codex home", async () => {
-  const codexHome = await mkdtemp(path.join(os.tmpdir(), "agency-codex-home-"));
+  const codexHome = await mkdtemp(path.join(os.tmpdir(), "vibeoos-codex-home-"));
   const result = spawnSync("make", ["link"], {
     cwd: repositoryRoot,
     encoding: "utf8",
@@ -44,8 +44,8 @@ test("make link installs all reference skills into an isolated Codex home", asyn
 });
 
 test("make link reports a same-name conflict without overwriting it", async () => {
-  const codexHome = await mkdtemp(path.join(os.tmpdir(), "agency-codex-home-"));
-  const conflictRoot = path.join(codexHome, "skills", "vibe-craft");
+  const codexHome = await mkdtemp(path.join(os.tmpdir(), "vibeoos-codex-home-"));
+  const conflictRoot = path.join(codexHome, "skills", "vibe-check");
   const marker = path.join(conflictRoot, "owner.txt");
   await mkdir(conflictRoot, { recursive: true });
   await writeFile(marker, "another installation");
@@ -57,6 +57,6 @@ test("make link reports a same-name conflict without overwriting it", async () =
   });
 
   assert.notEqual(result.status, 0);
-  assert.match(result.stderr, /vibe-craft: conflict/);
+  assert.match(result.stderr, /vibe-check: conflict/);
   await access(marker);
 });

@@ -1,0 +1,74 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="720" viewBox="0 0 1600 720" role="img" aria-labelledby="title desc">
+  <title id="title">Vibe 2.0 三件套：想明白、串起来、变套路</title>
+  <desc id="desc">模糊想法经过 vibe-check 成为明确目标，经过 vibe-flow 成为可检查的结果，再经过 vibe-recipe 成为下一次可以复用的 AI 菜谱。</desc>
+
+  <defs>
+    <linearGradient id="background" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#08090b"/>
+      <stop offset="1" stop-color="#111522"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#1539d1"/>
+      <stop offset="1" stop-color="#5275ff"/>
+    </linearGradient>
+    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="12" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <rect width="1600" height="720" fill="url(#background)"/>
+  <circle cx="1430" cy="-20" r="360" fill="#1539d1" opacity="0.08"/>
+  <circle cx="120" cy="760" r="300" fill="#5275ff" opacity="0.05"/>
+
+  <g font-family="Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, 'PingFang SC', 'Microsoft YaHei', sans-serif">
+    <text x="72" y="82" fill="#8fa3ff" font-size="22" font-weight="600" letter-spacing="5">VIBE 2.0 LOOP</text>
+    <text x="72" y="134" fill="#f2f0eb" font-size="34" font-weight="600">一次成功，变成下一次直接复用</text>
+
+    <g transform="translate(72 208)">
+      <rect width="430" height="292" rx="18" fill="#10131b" stroke="#2d3550"/>
+      <rect width="430" height="6" rx="3" fill="url(#accent)"/>
+      <text x="34" y="58" fill="#8fa3ff" font-size="18" font-weight="600" letter-spacing="3">01 · VIBE-CHECK</text>
+      <text x="34" y="128" fill="#f2f0eb" font-size="48" font-weight="650">想明白</text>
+      <text x="34" y="181" fill="#a9afbf" font-size="24">模糊感觉 → 明确目标</text>
+      <line x1="34" y1="220" x2="396" y2="220" stroke="#2d3550"/>
+      <text x="34" y="258" fill="#d8d9df" font-size="20">不用学习怎么把话说专业</text>
+    </g>
+
+    <g transform="translate(585 208)">
+      <rect width="430" height="292" rx="18" fill="#10131b" stroke="#2d3550"/>
+      <rect width="430" height="6" rx="3" fill="url(#accent)"/>
+      <text x="34" y="58" fill="#8fa3ff" font-size="18" font-weight="600" letter-spacing="3">02 · VIBE-FLOW</text>
+      <text x="34" y="128" fill="#f2f0eb" font-size="48" font-weight="650">串起来</text>
+      <text x="34" y="181" fill="#a9afbf" font-size="24">确定目标 → 可查结果</text>
+      <line x1="34" y1="220" x2="396" y2="220" stroke="#2d3550"/>
+      <text x="34" y="258" fill="#d8d9df" font-size="20">不用学习该选谁、先做什么</text>
+    </g>
+
+    <g transform="translate(1098 208)">
+      <rect width="430" height="292" rx="18" fill="#10131b" stroke="#2d3550"/>
+      <rect width="430" height="6" rx="3" fill="url(#accent)"/>
+      <text x="34" y="58" fill="#8fa3ff" font-size="18" font-weight="600" letter-spacing="3">03 · VIBE-RECIPE</text>
+      <text x="34" y="128" fill="#f2f0eb" font-size="48" font-weight="650">变套路</text>
+      <text x="34" y="181" fill="#a9afbf" font-size="24">一次成功 → 反复复用</text>
+      <line x1="34" y1="220" x2="396" y2="220" stroke="#2d3550"/>
+      <text x="34" y="258" fill="#d8d9df" font-size="20">不用下一次再从头学习</text>
+    </g>
+
+    <g fill="none" stroke="#5275ff" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" filter="url(#glow)">
+      <path d="M 520 354 H 559"/>
+      <path d="m 549 344 10 10-10 10"/>
+      <path d="M 1033 354 H 1072"/>
+      <path d="m 1062 344 10 10-10 10"/>
+    </g>
+
+    <line x1="72" y1="572" x2="1528" y2="572" stroke="#2d3550"/>
+    <text x="72" y="636" fill="#f2f0eb" font-size="28" font-weight="600">一次答对，只解决这一次</text>
+    <text x="430" y="636" fill="#70778b" font-size="28">·</text>
+    <text x="470" y="636" fill="#8fa3ff" font-size="28" font-weight="600">经验留下，下一次更省力</text>
+    <text x="1528" y="636" fill="#70778b" font-size="18" text-anchor="end" letter-spacing="2">vibeoOs</text>
+  </g>
+</svg>

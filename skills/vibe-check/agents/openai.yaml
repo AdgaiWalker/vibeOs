@@ -1,0 +1,4 @@
+interface:
+  display_name: "Vibe Check"
+  short_description: "想明白：把模糊感觉理成 AI 不会猜歪的明确目标"
+  default_prompt: "使用 $vibe-check，帮我把这个还说不清的想法理明白；每次只问我一个真正影响结果的问题。"

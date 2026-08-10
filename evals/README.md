@@ -1,4 +1,4 @@
-# vibeoOs Evaluations
+# vibeOs Evaluations
 
 Evaluations test whether Agency Protocol reduces guessing and rework while preserving human decision ownership.
 

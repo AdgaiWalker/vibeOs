@@ -20,7 +20,7 @@ const repositoryRoot = path.resolve(
 const skillNames = ["vibe-recipe", "vibe-check", "vibe-flow"];
 
 test("make unlink removes only links owned by this repository", async () => {
-  const codexHome = await mkdtemp(path.join(os.tmpdir(), "vibeoos-codex-home-"));
+  const codexHome = await mkdtemp(path.join(os.tmpdir(), "vibeos-codex-home-"));
   const environment = { ...process.env, CODEX_HOME: codexHome };
   const linkResult = spawnSync("make", ["link"], {
     cwd: repositoryRoot,
@@ -55,7 +55,7 @@ test("make unlink removes only links owned by this repository", async () => {
 });
 
 test("make unlink leaves a same-name path it does not own", async () => {
-  const codexHome = await mkdtemp(path.join(os.tmpdir(), "vibeoos-codex-home-"));
+  const codexHome = await mkdtemp(path.join(os.tmpdir(), "vibeos-codex-home-"));
   const environment = { ...process.env, CODEX_HOME: codexHome };
   const linkResult = spawnSync("make", ["link"], {
     cwd: repositoryRoot,

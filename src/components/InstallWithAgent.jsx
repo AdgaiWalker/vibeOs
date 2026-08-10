@@ -38,7 +38,7 @@ export function InstallWithAgent() {
       data-cinematic-ui
       data-cinematic-hold
       data-cinematic-cue
-      aria-label="使用 Agent 安装 vibeoOs 三件套"
+      aria-label="使用 Agent 安装 vibeOs 三件套"
     >
       <div className="hero-install__intro">
         <p>INSTALL WITH AGENT</p>
@@ -60,7 +60,7 @@ export function InstallWithAgent() {
           href={skillRepository.sourceUrl}
           target="_blank"
           rel="noreferrer"
-          aria-label={`在 GitHub 查看 vibeoOs 源码（${skillRepository.ref}）`}
+          aria-label={`在 GitHub 查看 vibeOs 源码（${skillRepository.ref}）`}
           title={`GitHub · ${skillRepository.ref}`}
         >
           <svg viewBox="0 0 24 24" aria-hidden="true">

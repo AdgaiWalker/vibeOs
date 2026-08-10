@@ -2,7 +2,7 @@
 
 ## 输入 X
 
-用户要求把 GitHub 仓库从 `AdgaiWalker/Agency-Craft` 改为 `AdgaiWalker/vibeoOs`，并把三件套从 `vibe-craft / vibe-flow / skill-craft` 迁移为 `vibe-check / vibe-flow / vibe-recipe`。同时，README 要改成零基础用户可以直接理解的 Vibe 2.0 官方介绍。
+用户要求把 GitHub 仓库从 `AdgaiWalker/Agency-Craft` 改为 `AdgaiWalker/vibeOs`，并把三件套从 `vibe-craft / vibe-flow / skill-craft` 迁移为 `vibe-check / vibe-flow / vibe-recipe`。同时，README 要改成零基础用户可以直接理解的 Vibe 2.0 官方介绍。
 
 ## 问题建模
 
@@ -29,7 +29,7 @@
 ## 输出 Y
 
 - 当前三件套：`vibe-check / vibe-flow / vibe-recipe`。
-- 当前仓库品牌：`vibeoOs`。
+- 当前仓库品牌：`vibeOs`。
 - 自动验证：`npm test` 与 `npm run build`。
 - 独立验证发现的 P1 已进入回归测试，不再只依赖人工记忆。
 

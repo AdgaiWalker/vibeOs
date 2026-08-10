@@ -9,7 +9,7 @@ test("homepage install source follows the branch that publishes renamed skills",
   assert.equal(skillRepository.ref, "main");
   assert.equal(
     skillRepository.sourceUrl,
-    "https://github.com/AdgaiWalker/vibeoOs/tree/main",
+    "https://github.com/AdgaiWalker/vibeOs/tree/main",
   );
 });
 

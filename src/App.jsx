@@ -383,7 +383,7 @@ export default function App() {
               ? "previous"
               : "idle"
         }
-        aria-label="vibeoOs 单屏介绍；上下滑动一次切换一幕"
+        aria-label="vibeOs 单屏介绍；上下滑动一次切换一幕"
       >
         <FilmCanvas
           visuals={scenes}
@@ -418,7 +418,7 @@ export default function App() {
             onClick={() => seekTo(0)}
             aria-label="返回开场"
           >
-            vibeoOs
+            vibeOs
           </button>
           <div className="stage-meta" aria-hidden="true">
             <span>{currentScene.label}</span>

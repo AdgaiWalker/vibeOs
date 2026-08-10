@@ -1,7 +1,7 @@
-const repositoryUrl = "https://github.com/AdgaiWalker/vibeoOs";
+const repositoryUrl = "https://github.com/AdgaiWalker/vibeOs";
 
 export const skillRepository = Object.freeze({
-  name: "vibeoOs",
+  name: "vibeOs",
   url: repositoryUrl,
   ref: "main",
   sourceUrl: `${repositoryUrl}/tree/main`,

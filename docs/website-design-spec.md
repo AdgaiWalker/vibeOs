@@ -1,4 +1,4 @@
-# vibeoOs Website Design Specification
+# vibeOs Website Design Specification
 
 ## Locked direction
 
@@ -10,12 +10,12 @@ The human-selected concept is [`design/concepts/01-hero-material-choreography.pn
 
 Above the fold:
 
-- `vibeoOs`
+- `vibeOs`
 - `不是只有伟大的开创者，才能让人们看见新的可能。`
 
 Downstream copy:
 
-1. `为什么需要 vibeoOs`
+1. `为什么需要 vibeOs`
 2. `AI 的执行能力越来越强，但执行速度不能补偿方向错误。`
 3. `更可爱` / `更高级` / `更自然`
 4. `把模糊变成具体。`

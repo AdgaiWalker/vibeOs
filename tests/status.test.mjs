@@ -13,7 +13,7 @@ const repositoryRoot = path.resolve(
 const skillNames = ["vibe-recipe", "vibe-check", "vibe-flow"];
 
 test("make status reports repository links without changing them", async () => {
-  const codexHome = await mkdtemp(path.join(os.tmpdir(), "vibeoos-codex-home-"));
+  const codexHome = await mkdtemp(path.join(os.tmpdir(), "vibeos-codex-home-"));
   const environment = { ...process.env, CODEX_HOME: codexHome };
   const linkResult = spawnSync("make", ["link"], {
     cwd: repositoryRoot,

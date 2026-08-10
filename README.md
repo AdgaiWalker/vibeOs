@@ -1,4 +1,4 @@
-# vibeoOs
+# vibeOs
 
 [![Protocol](https://img.shields.io/badge/Agency_Protocol-v0.1-5B5BD6)](protocol/) [![Skills](https://img.shields.io/badge/reference_skills-3-111111)](skills/) [![Tests](https://img.shields.io/badge/tests-Node.js-339933)](tests/) [![License: MIT](https://img.shields.io/badge/license-MIT-yellow.svg)](LICENSE)
 
@@ -10,18 +10,18 @@
 
 AI 1.0 没有消灭学习成本，只是把它转移给了人：先学怎么提问，再学选哪个工具，做成一次以后，下次还得重新来。
 
-vibeoOs 把这件事反过来。你先说一句大白话，AI 陪你把目标想明白、把合适的工具串起来，再把这次成功变成下次可以直接套用的办法。
+vibeOs 把这件事反过来。你先说一句大白话，AI 陪你把目标想明白、把合适的工具串起来，再把这次成功变成下次可以直接套用的办法。
 
 > **我们以为自己在学习 AI，真正好的 AI 应该先学会理解我们。**
 
-![vibeoOs 的 Vibe Tri-Pack：想明白、串起来、变套路](docs/assets/vibe-tri-pack.svg)
+![vibeOs 的 Vibe Tri-Pack：想明白、串起来、变套路](docs/assets/vibe-tri-pack.svg)
 
 ## 复制一句话，直接安装
 
 复制下面的内容，粘贴到你常用的 AI 对话框：
 
 ```text
-https://github.com/AdgaiWalker/vibeoOs
+https://github.com/AdgaiWalker/vibeOs
 帮我安装技能
 ```
 
@@ -143,7 +143,7 @@ make test
 <summary><strong>查看仓库结构</strong></summary>
 
 ```text
-vibeoOs/
+vibeOs/
 ├── skills/
 │   ├── vibe-check/          # 想明白
 │   ├── vibe-flow/           # 串起来

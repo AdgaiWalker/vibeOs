@@ -38,11 +38,11 @@ export function InstallWithAgent() {
       data-cinematic-ui
       data-cinematic-hold
       data-cinematic-cue
-      aria-label="使用 Agent 安装 vibeOs 三件套"
+      aria-label="使用 AI 对话框安装 vibeOs 三件套"
     >
       <div className="hero-install__intro">
         <p>INSTALL WITH AGENT</p>
-        <span>粘贴给你的 Agent · 写入前确认技能与范围</span>
+        <span>复制后粘贴到你常用的 AI 对话框</span>
       </div>
 
       <div className="hero-install__actions">

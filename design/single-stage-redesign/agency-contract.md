@@ -130,9 +130,9 @@ acceptance_criteria:
     method: In-app browser viewport checks at 1440×1024, 834×1194, and 390×844.
     status: pass
     evidence:
-      - design/qa-current/desktop-01-hero.png through desktop-06-evidence.png.
-      - design/qa-current/tablet-01-hero.png, tablet-03-loop.png, and tablet-05-contract.png.
-      - design/qa-current/mobile-01-hero.png through mobile-06-evidence.png.
+      - design/qa-2026-08-01/desktop-01-hero.png through desktop-06-evidence.png.
+      - design/qa-2026-08-01/tablet-01-hero.png, tablet-03-loop.png, and tablet-05-contract.png.
+      - design/qa-2026-08-01/mobile-01-hero.png through mobile-06-evidence.png.
       - Browser measurements confirm scroll dimensions equal viewport dimensions at all three sizes.
       - A fresh cold-start browser session contains no warnings or errors.
 handoff:

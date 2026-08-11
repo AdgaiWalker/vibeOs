@@ -1,5 +1,6 @@
 import test from "node:test";
 import assert from "node:assert/strict";
+import { readFile } from "node:fs/promises";
 import {
   agencyInstallPrompt,
   skillRepository,
@@ -13,32 +14,25 @@ test("homepage install source follows the branch that publishes renamed skills",
   );
 });
 
-test("install prompt maps every published skill to its repository path", () => {
-  for (const { name, path } of skillRepository.skills) {
-    assert.match(agencyInstallPrompt, new RegExp(name));
-    assert.match(agencyInstallPrompt, new RegExp(path));
-  }
+test("repository publishes the complete Vibe Tri-Pack", () => {
+  assert.deepEqual(
+    skillRepository.skills.map(({ name }) => name),
+    ["vibe-check", "vibe-flow", "vibe-recipe"],
+  );
 });
 
-test("install prompt requires scope and skill confirmation before writes", () => {
-  assert.match(agencyInstallPrompt, /先不要修改文件/);
-  assert.match(agencyInstallPrompt, /全局安装/);
-  assert.match(agencyInstallPrompt, /当前项目安装/);
-  assert.match(agencyInstallPrompt, /选择安装一个还是全部/);
-  assert.match(agencyInstallPrompt, /等待我的回答/);
+test("install prompt stays at the two-line zero-friction entry", () => {
+  assert.equal(
+    agencyInstallPrompt,
+    "https://github.com/AdgaiWalker/vibeOs\n帮我安装技能",
+  );
 });
 
-test("install prompt covers conflicts, verification, and honest failure", () => {
-  assert.match(agencyInstallPrompt, /同名不同来源冲突/);
-  assert.match(agencyInstallPrompt, /不要覆盖或删除/);
-  assert.match(agencyInstallPrompt, /验证结果/);
-  assert.match(agencyInstallPrompt, /卸载和回滚方法/);
-  assert.match(agencyInstallPrompt, /不要宣称安装成功/);
-});
-
-test("install prompt treats legacy skill names as an explicit migration", () => {
-  assert.match(agencyInstallPrompt, /vibe-craft/);
-  assert.match(agencyInstallPrompt, /skill-craft/);
-  assert.match(agencyInstallPrompt, /不要直接删除/);
-  assert.match(agencyInstallPrompt, /明确同意迁移/);
+test("README and website share one prompt and one safety expectation", async () => {
+  const readme = await readFile(new URL("../README.md", import.meta.url), "utf8");
+  assert.equal(readme.includes(agencyInstallPrompt), true);
+  assert.match(
+    readme,
+    /AI 会先检查兼容性、安装位置和同名冲突，等你确认后再开始/,
+  );
 });

@@ -22,9 +22,9 @@ Downstream copy:
 5. `AI 引导意图，人做决策，AI 执行。`
 6. `观察现状` → `建立对照` → `人做决定` → `写成规格` → `裁决能力` → `AI 执行` → `按证据验收` → `沉淀经验`
 7. `三道独立闸门`
-8. `INTENT` / `Vibe-Check` / `把感觉变成决定`
-9. `FLOW` / `Vibe-Flow` / `让能力选明白、组织好`
-10. `CAPABILITY` / `Vibe-Recipe` / `把一次方法变成可靠技能`
+8. `CHECK` / `Vibe-Check` / `想明白：把模糊感觉理成明确目标`
+9. `FLOW` / `Vibe-Flow` / `串起来：自动挑工具并把事情做完`
+10. `RECIPE` / `Vibe-Recipe` / `变套路：把一次成功炼成通用菜谱`
 11. `AGENCY CONTRACT` / `共同交接语言`
 12. `它是交接物，不是让用户填写的表格。`
 13. `objective` / `decisions` / `boundaries` / `acceptance_criteria` / `handoff` / `evidence`
@@ -48,7 +48,7 @@ Downstream copy:
 
 | Chapter | Production plate | Scroll behavior | Pointer/touch behavior |
 | --- | --- | --- | --- |
-| Hero | `public/media/hero-material.png`, portrait variant `hero-material-mobile.png` | slow zoom into the fold; grid preview remains visible | localized pull/refraction around pointer or drag |
+| Hero | `public/media/hero-stage-v2.png`, portrait variant `hero-material-mobile.png` | slow zoom into the fold; grid preview remains visible | localized pull/refraction around pointer or drag |
 | Direction | `public/media/direction-error.png` | blurred material converges on the right crease | local focus changes |
 | Loop | `public/media/vibe-loop.png` | eight labels advance through one pinned material path | local tension on the continuous ribbon |
 | Gates | `public/media/three-gates.png`, portrait variant `three-gates-mobile.png` | same membrane crosses three apertures | selected gate copy and local aperture distortion |

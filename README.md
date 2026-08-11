@@ -25,7 +25,7 @@ https://github.com/AdgaiWalker/vibeOs
 帮我安装技能
 ```
 
-使用 Claude Code 或 Codex CLI 时，安装后请重启终端会话；Codex 桌面版无需重启。
+AI 会先检查兼容性、安装位置和同名冲突，等你确认后再开始；完成后按它给出的提示使用。
 
 ## AI 1.0 真正昂贵的地方
 

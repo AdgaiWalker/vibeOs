@@ -40,7 +40,7 @@ AI 负责减少重复的研究、组织和交接；你保留目标、取舍和�
 复制下面的内容，粘贴到你常用的 AI 对话框：
 
 ```text
-https://github.com/AdgaiWalker/vibeOs
+https://github.com/AdgaiWalker/vibe0s
 帮我安装技能
 ```
 

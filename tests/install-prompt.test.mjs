@@ -10,7 +10,7 @@ test("homepage install source follows the branch that publishes renamed skills",
   assert.equal(skillRepository.ref, "main");
   assert.equal(
     skillRepository.sourceUrl,
-    "https://github.com/AdgaiWalker/vibeOs/tree/main",
+    "https://github.com/AdgaiWalker/vibe0s/tree/main",
   );
 });
 
@@ -24,7 +24,7 @@ test("repository publishes the complete Vibe Tri-Pack", () => {
 test("install prompt stays at the two-line zero-friction entry", () => {
   assert.equal(
     agencyInstallPrompt,
-    "https://github.com/AdgaiWalker/vibeOs\n帮我安装技能",
+    "https://github.com/AdgaiWalker/vibe0s\n帮我安装技能",
   );
 });
 

@@ -23,7 +23,7 @@
 克隆 vibeOs 并链接三个 Skill：
 
 ```bash
-git clone https://github.com/AdgaiWalker/vibeOs.git
+git clone https://github.com/AdgaiWalker/vibe0s.git
 cd vibeOs
 make link
 ```

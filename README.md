@@ -14,7 +14,6 @@
 
 ![vibeOs 的 Vibe Tri-Pack：想明白、串起来、变套路](docs/assets/vibe-tri-pack.svg)
 
-## 什么时候用 vibeOs
 
 | 你现在卡在哪里 | 直接这样说 | 接下来会发生什么 |
 | --- | --- | --- |
